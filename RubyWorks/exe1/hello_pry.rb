@@ -8,6 +8,8 @@ print "are"
 print "good"
 print "too."
 
+require 'pry'
+
 name = "Rafael"
 puts "Hi #{name}/n"
 
@@ -18,5 +20,7 @@ second_number = gets.chomp.to_i
 puts "#{first_number} x #{second_number} = #{first_number * second_number}"
 
 file_contents = IO.read("hello.rb")
+
+binding.pry
 
 puts "The source file contains: #{file_contents}"
